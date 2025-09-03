@@ -177,4 +177,14 @@ public class ApiTests {
                 .then()
                 .statusCode(404);
     }
+
+    @Test @Order(12) @Tag("negative")
+    @DisplayName("GET /posts")
+    void getWrongPosts4(){
+        given()
+                .when()
+                .get("/postssss")
+                .then()
+                .statusCode(404);
+    }
 }
