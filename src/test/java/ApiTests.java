@@ -185,6 +185,6 @@ public class ApiTests {
                 .when()
                 .get("/postssss")
                 .then()
-                .statusCode(404);
+                .statusCode(405);
     }
 }
