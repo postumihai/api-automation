@@ -180,7 +180,7 @@ public class ApiTests {
 
     @Test @Order(12) @Tag("negative")
     @DisplayName("GET /posts")
-    void getWrongPosts4(){
+    void getWrongPosts6(){
         given()
                 .when()
                 .get("/postssss")
